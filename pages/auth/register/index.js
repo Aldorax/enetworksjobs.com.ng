@@ -1,6 +1,7 @@
 'use client';
 
 import { Button } from '@nextui-org/react';
+import Link from 'next/link';
 
 export default function HireForm() {
   return (
@@ -51,22 +52,26 @@ export default function HireForm() {
       </div>
       <br />
       <div className="flex flex-col items-center justify-center mt-4 space-y-2">
-        <Button
-          auto
-          shadow
-          size="small"
-          className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-xl min-w-[300px] md:min-w-[400px]"
-        >
-          NGO
-        </Button>
-        <Button
-          auto
-          shadow
-          size="small"
-          className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-xl min-w-[300px] md:min-w-[400px]"
-        >
-          Executive
-        </Button>
+        <Link href="/auth/register/ngo-community-portfolio-desk-offices">
+          <Button
+            auto
+            shadow
+            size="small"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-xl min-w-[300px] md:min-w-[400px]"
+          >
+            NGO
+          </Button>
+        </Link>
+        <Link href="/auth/register/executive-business-managerial-positions">
+          <Button
+            auto
+            shadow
+            size="small"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-xl min-w-[300px] md:min-w-[400px]"
+          >
+            Executive
+          </Button>
+        </Link>
       </div>
     </div>
   );
