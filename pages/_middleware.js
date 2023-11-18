@@ -17,6 +17,7 @@ export default function middleware(req) {
       pathname !== '/auth/login' &&
       pathname !== '/auth/register' &&
       pathname !== '/auth/register/executive-business-managerial-positions' &&
+      pathname !== '/auth/register/ngo-community-portfolio-desk-offices' &&
       pathname !== '/auth/forgot' &&
       !pathname.match(/\/auth\/reset\/[\w]*/gi)
     ) {
@@ -30,6 +31,7 @@ export default function middleware(req) {
       pathname === '/auth/login' ||
       pathname === '/auth/register' ||
       pathname === '/auth/register/executive-business-managerial-positions' ||
+      pathname === '/auth/register/ngo-community-portfolio-desk-offices' ||
       pathname === '/auth/forgot' ||
       pathname.match(/\/auth\/reset\/[\w]*/gi)
     ) {
