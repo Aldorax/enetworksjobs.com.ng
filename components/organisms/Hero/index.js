@@ -14,10 +14,13 @@ export default function index() {
               <div className={styles.hero_wrapper}>
                 <h1 className={styles.hero_title}>Welcome to ENETWORKSJOBS!</h1>
                 <p className={styles.hero_subtitle}>
-                  E-Networksjobs is the recruitment, employment and entrepreneur
-                  creation platform of E-NETWORKS TECHNOLOGIES LTD which we call
-                  E-NETWORKSVERSE. It is a place where you experience ease of
-                  living on earth. Yes you got that right.
+                  <span className="font-bold">E-networksjobs</span> is the
+                  recruitment, employment and entrepreneur creation platform of{' '}
+                  <span className="font-bold">E-networks</span> TECHNOLOGIES LTD
+                  which we call
+                  <span className="font-bold">E-networksverse</span>VERSE. It is
+                  a place where you experience ease of living on earth. Yes you
+                  got that right.
                 </p>
                 <p className={styles.hero_subtitle}>
                   While on earth, you are meant to maximize the most of the
