@@ -57,7 +57,7 @@ export default function HireForm() {
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-xl min-w-[300px] md:min-w-[400px]"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[300px] md:min-w-[400px]"
           >
             NGO
           </Button>
@@ -67,7 +67,7 @@ export default function HireForm() {
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-xl min-w-[300px] md:min-w-[400px]"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[300px] md:min-w-[400px]"
           >
             Executive
           </Button>
