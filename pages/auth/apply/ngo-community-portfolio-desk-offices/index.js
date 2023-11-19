@@ -2,11 +2,8 @@
 
 import { Button, Image } from '@nextui-org/react';
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 
 export default function HireForm() {
-  const router = useRouter();
-
   const [formData, setFormData] = useState({
     email: '',
     phone_number: '',
@@ -96,7 +93,7 @@ export default function HireForm() {
         alert(data.message);
       }
     } finally {
-      router.push('/auth/apply/success');
+      window.location.href = '/auth/apply/success';
     }
   };
 
@@ -300,7 +297,7 @@ export default function HireForm() {
               id="agent_account_id"
               type="text"
               className="w-full bg-transparent border-transparent outline-transparent"
-              placeholder="Enter your Agent Account ID"
+              placeholder="Enter your Agent Card Number"
               required
               name="agent_account_id"
               onChange={handleInputChange}

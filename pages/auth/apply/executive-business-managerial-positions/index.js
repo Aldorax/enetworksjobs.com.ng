@@ -294,7 +294,7 @@ export default function HireForm() {
               id="agent_account_id"
               type="text"
               className="w-full bg-transparent border-transparent outline-transparent"
-              placeholder="Enter your Agent Account ID"
+              placeholder="Enter your Agent Card Number"
               required
               name="agent_account_id"
               onChange={handleInputChange}
