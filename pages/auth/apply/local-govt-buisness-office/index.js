@@ -84,16 +84,13 @@ export default function HireForm() {
       );
 
       if (response.status === 200) {
-        alert(
-          'You have applied for the job successfully, we will get back to you soon'
-        );
         window.location.href = '/apply-for-position/success';
       } else {
         const data = await response.json();
         alert(data.message);
       }
-    } finally {
-      window.location.href = '/auth/apply/success';
+    } catch {
+      console.log('hello');
     }
   };
 

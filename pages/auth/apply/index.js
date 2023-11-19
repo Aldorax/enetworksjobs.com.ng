@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function HireForm() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen max-w-screen p-6">
+    <div className="flex flex-col items-start justify-center w-screen max-w-screen p-6 md:p-12">
       <div className="flex flex-col items-start justify-sart">
         <h1 className="text-3xl font-bold text-gray-700">Welcome Applicant</h1>
         <p className="text-gray-500">
