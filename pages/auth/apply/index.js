@@ -52,7 +52,7 @@ export default function HireForm() {
       </div>
       <br />
       <div className="flex flex-col items-center justify-center mt-4 space-y-2">
-        <Link href="/auth/register/ngo-community-portfolio-desk-offices">
+        <Link href="/auth/apply/ngo-community-portfolio-desk-offices">
           <Button
             auto
             shadow
@@ -62,7 +62,7 @@ export default function HireForm() {
             NGO
           </Button>
         </Link>
-        <Link href="/auth/register/executive-business-managerial-positions">
+        <Link href="/auth/apply/executive-business-managerial-positions">
           <Button
             auto
             shadow

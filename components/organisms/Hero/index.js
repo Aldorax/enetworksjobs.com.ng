@@ -18,8 +18,8 @@ export default function index() {
                   recruitment, employment and entrepreneur creation platform of{' '}
                   <span className="font-bold">E-networks</span> TECHNOLOGIES LTD
                   which we call
-                  <span className="font-bold">E-networksverse</span>VERSE. It is
-                  a place where you experience ease of living on earth. Yes you
+                  <span className="font-bold">E-networksverse</span>. It is a
+                  place where you experience ease of living on earth. Yes you
                   got that right.
                 </p>
                 <p className={styles.hero_subtitle}>
@@ -28,7 +28,7 @@ export default function index() {
                   supposed to live here on your own terms not the other way
                   round.
                 </p>
-                <Link href="/auth/register">
+                <Link href="/auth/apply">
                   <button className={`btn ${styles.hero_button}`}>
                     Apply for open positions
                   </button>

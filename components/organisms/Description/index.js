@@ -19,7 +19,7 @@ export default function index() {
                   E-NETWORKSVERSE is a world of experiencing easier way to live
                   on earth
                 </p>
-                <Link href="/auth/register">
+                <Link href="/auth/apply">
                   <button className={`btn ${styles.hero_button}`}>
                     Start applying now
                   </button>

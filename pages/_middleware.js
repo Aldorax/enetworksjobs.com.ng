@@ -15,9 +15,10 @@ export default function middleware(req) {
     if (
       pathname !== '/' &&
       pathname !== '/auth/login' &&
-      pathname !== '/auth/register' &&
-      pathname !== '/auth/register/executive-business-managerial-positions' &&
-      pathname !== '/auth/register/ngo-community-portfolio-desk-offices' &&
+      pathname !== '/auth/apply' &&
+      pathname !== '/auth/apply/executive-business-managerial-positions' &&
+      pathname !== '/auth/apply/ngo-community-portfolio-desk-offices' &&
+      pathname !== '/auth/apply/success' &&
       pathname !== '/auth/forgot' &&
       !pathname.match(/\/auth\/reset\/[\w]*/gi)
     ) {
@@ -29,9 +30,10 @@ export default function middleware(req) {
   if (token) {
     if (
       pathname === '/auth/login' ||
-      pathname === '/auth/register' ||
-      pathname === '/auth/register/executive-business-managerial-positions' ||
-      pathname === '/auth/register/ngo-community-portfolio-desk-offices' ||
+      pathname === '/auth/apply' ||
+      pathname === '/auth/apply/executive-business-managerial-positions' ||
+      pathname === '/auth/apply/ngo-community-portfolio-desk-offices' ||
+      pathname === '/auth/apply/success' ||
       pathname === '/auth/forgot' ||
       pathname.match(/\/auth\/reset\/[\w]*/gi)
     ) {

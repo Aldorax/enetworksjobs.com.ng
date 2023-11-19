@@ -111,10 +111,10 @@ const index = ({ token = false }) => {
             </>
           ) : (
             <ul className="navbar-nav ms-auto start">
-              <Link href="/auth/login">
+              {/* <Link href="/auth/login">
                 <button className="btn_auth signin">Sign In</button>
-              </Link>
-              <Link href="/auth/register">
+              </Link> */}
+              <Link href="/auth/apply">
                 <button className="btn_auth signup">Apply for position</button>
               </Link>
             </ul>

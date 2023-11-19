@@ -20,6 +20,8 @@ export default function HireForm() {
     next_of_kin_relationship: '',
     next_of_kin_email: '',
     to_work_state: '',
+    agent_account_id: '',
+    agent_account_email: '',
   });
   // useState to store image file
   const [selectedImage, setSelectedImage] = useState(null);
@@ -63,6 +65,11 @@ export default function HireForm() {
       );
       formDataToSubmit.append('next_of_kin_email', formData.next_of_kin_email);
       formDataToSubmit.append('to_work_state', formData.to_work_state);
+      formDataToSubmit.append('agent_account_id', formData.agent_account_id);
+      formDataToSubmit.append(
+        'agent_account_email',
+        formData.agent_account_email
+      );
 
       if (selectedImage) {
         formDataToSubmit.append('profile_image', selectedImage);
@@ -77,16 +84,13 @@ export default function HireForm() {
       );
 
       if (response.status === 200) {
-        alert(
-          'You have applied for the job successfully, we will get back to you soon'
-        );
-        window.location.href = '/apply-for-position/success';
+        window.location.href = '/auth/apply/success';
       } else {
         const data = await response.json();
         alert(data.message);
       }
-    } finally {
-      alert('final');
+    } catch {
+      alert('error making application');
     }
   };
 
@@ -255,6 +259,44 @@ export default function HireForm() {
               placeholder="Enter your Phone Number"
               required
               name="phone_number"
+              onChange={handleInputChange}
+            />
+          </div>
+        </div>
+        <div className="flex flex-wrap -mx-3 mb-4 border border-dark rounded-xl p-3">
+          <div className="w-full px-3">
+            <label
+              className="block text-default-800 text-sm font-medium mb-1"
+              htmlFor="last_name"
+            >
+              Agent Account Email<span className="text-red-600">*</span>
+            </label>
+            <input
+              id="agent_account_email"
+              type="text"
+              className="w-full bg-transparent border-transparent outline-transparent"
+              placeholder="Enter your Agent Account Email"
+              required
+              name="agent_account_email"
+              onChange={handleInputChange}
+            />
+          </div>
+        </div>
+        <div className="flex flex-wrap -mx-3 mb-4 border border-dark rounded-xl p-3">
+          <div className="w-full px-3">
+            <label
+              className="block text-default-800 text-sm font-medium mb-1"
+              htmlFor="agent_account_id"
+            >
+              Agent Account Card Number<span className="text-red-600">*</span>
+            </label>
+            <input
+              id="agent_account_id"
+              type="text"
+              className="w-full bg-transparent border-transparent outline-transparent"
+              placeholder="Enter your Agent Account ID"
+              required
+              name="agent_account_id"
               onChange={handleInputChange}
             />
           </div>
