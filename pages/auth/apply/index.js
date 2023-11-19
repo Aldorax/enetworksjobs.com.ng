@@ -44,10 +44,10 @@ export default function HireForm() {
       <div className="flex flex-col items-center justify-center mt-4">
         <div className="flex flex-col items-start justify-start">
           <h1 className="text-2xl font-bold text-gray-700 underline mb-2">
-            CONDITIONS OF SERVIC
+            CONDITIONS OF SERVICE
           </h1>
-          <p className="text-gray-500">
-            <ol>
+          <p className="text-gray-500 text-sm">
+            <ol className="space-y-2">
               <li>1. ALL EMPLOYEES WILL BE ON A 3 MONTHS PROBATION PERIOD </li>
               <li>
                 2. ALL EMPLOYEES THAT HAVE SUCCEEDED WITHIN THE 3 MONTHS
