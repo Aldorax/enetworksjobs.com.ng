@@ -18,6 +18,8 @@ export default function middleware(req) {
       pathname !== '/auth/apply' &&
       pathname !== '/auth/apply/executive-business-managerial-positions' &&
       pathname !== '/auth/apply/ngo-community-portfolio-desk-offices' &&
+      pathname !== '/auth/apply/local-govt-buisness-office' &&
+      pathname !== '/auth/apply/local-govt-ngo-desk-office' &&
       pathname !== '/auth/apply/success' &&
       pathname !== '/auth/forgot' &&
       !pathname.match(/\/auth\/reset\/[\w]*/gi)
