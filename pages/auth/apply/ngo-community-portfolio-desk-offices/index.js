@@ -84,7 +84,7 @@ export default function HireForm() {
       );
 
       if (response.status === 200) {
-        window.location.href = '/apply-for-position/success';
+        window.location.href = '/auth/apply/success';
       } else {
         const data = await response.json();
         alert(data.message);
