@@ -15,7 +15,7 @@ export default function index() {
               We are currently
               <span>hiring</span>
             </h2>
-            <Link href="/auth/register">
+            <Link href="/auth/apply">
               <button className={`btn ${styles.subscribe_button}`}>
                 Apply now
               </button>
