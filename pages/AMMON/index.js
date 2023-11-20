@@ -1,21 +1,38 @@
 'use client';
 
 import { Button } from '@nextui-org/react';
-import { Ammon } from 'assets';
+import { Ammon, LogoPurple } from 'assets';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function HireForm() {
   return (
     <div className="flex flex-col items-start justify-center w-screen max-w-screen p-6 md:p-12">
-      <Image
-        src={Ammon}
-        alt="ammon"
-        quality={100}
-        className="max-h-10 w-full"
-      />
-      <div className="flex flex-col items-start justify-sart">
-        <h1 className="text-3xl font-bold text-gray-700">Welcome Applicant</h1>
+      <div className="flex items-center gap-4 justify-evenly w-full">
+        <Image
+          src={LogoPurple}
+          alt="ammon"
+          width={100}
+          height={100}
+          quality={100}
+          className="max-w-10 h-10"
+        />
+        <Image
+          src={Ammon}
+          alt="ammon"
+          width={100}
+          height={100}
+          quality={100}
+          className="max-w-10 h-10"
+        />
+      </div>
+      <div className="flex flex-col items-center text-center justify-center md:items-start md:justify-sart mt-6">
+        <h1 className="text-xl font-semibold text-gray-700">
+          Welcome Applicant for
+        </h1>
+        <h1 className="text-xl font-bold text-gray-700">
+          PROJECT AMMON/ENETWORKSJOBS
+        </h1>
         <p className="text-gray-500">
           Apply for an Executive or Business Managerial Positions
         </p>
