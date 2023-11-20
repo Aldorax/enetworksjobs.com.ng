@@ -128,7 +128,7 @@ export default function HireForm() {
           Job Application Categories
         </h1>
         <p className="text-gray-500">
-          We have 2 Categories of Job Application for you to choose from
+          We have 4 Categories of Job Application for you to choose from
         </p>
       </div>
       <br />
@@ -138,9 +138,9 @@ export default function HireForm() {
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-green-500"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-green-500 font-semibold text-white"
           >
-            Click to apply for STATE OFFICE BUSINESS POSITIONS below.
+            Click to apply for STATE OFFICE BUSINESS POSITIONS.
           </Button>
         </Link>
         <br />
@@ -149,9 +149,9 @@ export default function HireForm() {
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-yellow-500"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-yellow-500 font-semibold text-white"
           >
-            Click To apply for STATE NGO DESK OFFICES
+            Click To apply for STATE NGO DESK OFFICE POSITIONS
           </Button>
         </Link>
         <br />
@@ -160,9 +160,9 @@ export default function HireForm() {
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-blue-500"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-blue-500 font-semibold text-white"
           >
-            Clcick to apply for LOCAL GOVT BUSINESS OFFICES
+            Clcick to apply for LOCAL GOVT BUSINESS OFFICE POSITIONS
           </Button>
         </Link>
         <br />
@@ -171,9 +171,9 @@ export default function HireForm() {
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-red-500"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-red-500 font-semibold text-white"
           >
-            Click to apply for LOCAL GOVT NGO DESK OFFICES
+            Click to apply for LOCAL GOVT NGO DESK OFFICE POSITIONS
           </Button>
         </Link>
       </div>
