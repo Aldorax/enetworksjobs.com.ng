@@ -44,6 +44,46 @@ export default function HireForm() {
       <div className="flex flex-col items-center justify-center mt-4">
         <div className="flex flex-col items-start justify-start">
           <h1 className="text-2xl font-bold text-gray-700 underline mb-2">
+            REMUNERATION:
+          </h1>
+          <p className="text-gray-500 text-sm">
+            <ol className="space-y-2">
+              <li>
+                Note: ALL EMPLOYEES WILL BE ON A 3 MONTHS PROBATION PERIOD{' '}
+              </li>
+              <li>
+                Note: ALL EMPLOYEES THAT HAVE SUCCEEDED WITHIN THE 3 MONTHS
+                PROBATION PERIOD WILL BE CONFIRMED WITH A POSSIBLE SALARY REVIEW
+                AND ACCESS TO APPROVED ALLOWANCES{' '}
+              </li>
+              <li>
+                1. STATE MANAGERS AND DESK OFFICERS: #1,200,000 BASIC/ ANNUM
+              </li>
+              <li>
+                2. DEP STATE MANAGER AND DEP STATE DESK OFFICER: #840,000 BASIC/
+                ANNUM
+              </li>
+              <li>3. OTHER STATE OFFICIALS; #600,000 BASIC/ ANNUM</li>
+              <li>4. LG MANAGER/ DESK OFFICER: #720,000 BASIC/ANNUM</li>
+              <li>5. LG DEP MANAGER/ DEP DESK OFFICER: #480,000 BASIC/ANNUM</li>
+              <li>6. OTHER LG OFFICIALS: #360,000 BASIC/ ANNUM</li>
+              <li>
+                7. ALL POSITIONS COME WITH CONTRIBUTORY PENSION PLANS FOR POST
+                ENGAGEMENT WELFARE PROGRAM UPON CONFIRMATION AFTER 3 MONTHS
+                PROBATION
+              </li>
+              <li>
+                8. ALL POSITIONS COME WITH ALLOWANCES FOR AIRTIME AND DATA UPON
+                CONFIRMATION AFTER 3 MONTHS PROBATION.
+              </li>
+            </ol>
+          </p>
+        </div>
+      </div>
+      <br />
+      <div className="flex flex-col items-center justify-center mt-4">
+        <div className="flex flex-col items-start justify-start">
+          <h1 className="text-2xl font-bold text-gray-700 underline mb-2">
             CONDITIONS OF SERVICE
           </h1>
           <p className="text-gray-500 text-sm">
@@ -83,34 +123,34 @@ export default function HireForm() {
         </div>
       </div>
       <br />
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center w-full">
         <h1 className="text-3xl font-bold text-gray-700 mb-3">
-          Job application Categories
+          Job Application Categories
         </h1>
         <p className="text-gray-500">
           We have 2 Categories of Job Application for you to choose from
         </p>
       </div>
       <br />
-      <div className="flex flex-col items-center justify-center mt-4 space-y-2">
-        <Link href="/auth/apply/ngo-community-portfolio-desk-offices">
-          <Button
-            auto
-            shadow
-            size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[300px] md:min-w-[400px]"
-          >
-            State NGO DESK OFFICE
-          </Button>
-        </Link>
+      <div className="flex flex-col items-center justify-center w-full mt-4 space-y-2">
         <Link href="/auth/apply/executive-business-managerial-positions">
           <Button
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[300px] md:min-w-[400px]"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px]"
           >
-            State office buisness positions
+            STATE OFFICE BUSINESS POSITIONS
+          </Button>
+        </Link>
+        <Link href="/auth/apply/ngo-community-portfolio-desk-offices">
+          <Button
+            auto
+            shadow
+            size="small"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px]"
+          >
+            STATE NGO DESK OFFICE
           </Button>
         </Link>
         <Link href="/auth/apply/local-govt-buisness-office">
@@ -118,7 +158,7 @@ export default function HireForm() {
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[300px] md:min-w-[400px]"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px]"
           >
             LOCAL GOVT BUSINESS OFFICE
           </Button>
@@ -128,7 +168,7 @@ export default function HireForm() {
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[300px] md:min-w-[400px]"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px]"
           >
             LOCAL GOVT NGO DESK OFFICES
           </Button>

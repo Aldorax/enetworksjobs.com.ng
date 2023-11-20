@@ -12,6 +12,7 @@ export default function HireForm() {
     local_government: '',
     ward: '',
     guarantor_name: '',
+    guarantor_phone_number: '',
     language: '',
     position: '',
     gender: '',
@@ -51,6 +52,10 @@ export default function HireForm() {
       formDataToSubmit.append('local_government', formData.local_government);
       formDataToSubmit.append('ward', formData.ward);
       formDataToSubmit.append('guarantor_name', formData.guarantor_name);
+      formDataToSubmit.append(
+        'guarantor_phone_number',
+        formData.guarantor_phone_number
+      );
       formDataToSubmit.append('language', formData.language);
       formDataToSubmit.append('position', formData.position);
       formDataToSubmit.append('gender', formData.gender);
@@ -90,7 +95,7 @@ export default function HireForm() {
         alert(data.message);
       }
     } catch {
-      console.log('hello');
+      alert('error making application');
     }
   };
 
@@ -175,7 +180,7 @@ export default function HireForm() {
   const GENDER = ['Male', 'Female'];
 
   return (
-    <div className="p-4">
+    <div className="p-2">
       <div className="p-6">
         {!imagePreview ? (
           <div className="flex flex-wrap mx-auto mb-4 text-center">
@@ -235,7 +240,7 @@ export default function HireForm() {
             <input
               id="email"
               type="email"
-              className="w-full bg-transparent border-transparent outline-transparent"
+              className="w-full bg-transparent border-transparent outline-transparent text-sm"
               placeholder="Enter your Email"
               required
               name="email"
@@ -254,7 +259,7 @@ export default function HireForm() {
             <input
               id="phone_number"
               type="text"
-              className="w-full bg-transparent border-transparent outline-transparent"
+              className="w-full bg-transparent border-transparent outline-transparent text-sm"
               placeholder="Enter your Phone Number"
               required
               name="phone_number"
@@ -268,13 +273,14 @@ export default function HireForm() {
               className="block text-default-800 text-sm font-medium mb-1"
               htmlFor="last_name"
             >
-              Agent Account Email<span className="text-red-600">*</span>
+              Enetworkspay Agent Account Email:
+              <span className="text-red-600">*</span>
             </label>
             <input
               id="agent_account_email"
               type="text"
-              className="w-full bg-transparent border-transparent outline-transparent"
-              placeholder="Enter your Agent Account Email"
+              className="w-full bg-transparent border-transparent outline-transparent text-sm"
+              placeholder="Enter your Enetworkspay Agent Account Email:"
               required
               name="agent_account_email"
               onChange={handleInputChange}
@@ -287,13 +293,13 @@ export default function HireForm() {
               className="block text-default-800 text-sm font-medium mb-1"
               htmlFor="agent_account_id"
             >
-              Agent Account Card Number<span className="text-red-600">*</span>
+              Enetworkspay Card Number <span className="text-red-600">*</span>
             </label>
             <input
               id="agent_account_id"
               type="text"
-              className="w-full bg-transparent border-transparent outline-transparent"
-              placeholder="Enter your Agent Card Number"
+              className="w-full bg-transparent border-transparent outline-transparent text-sm"
+              placeholder="Enter your Enetworkspay Card Number :"
               required
               name="agent_account_id"
               onChange={handleInputChange}
@@ -312,7 +318,7 @@ export default function HireForm() {
             <input
               id="active_contact_address"
               type="email"
-              className="w-full bg-transparent border-transparent outline-transparent"
+              className="w-full bg-transparent border-transparent outline-transparent text-sm"
               placeholder="Enter your Active Contact Address"
               required
               name="active_contact_address"
@@ -356,7 +362,7 @@ export default function HireForm() {
             <input
               id="local_government"
               type="text"
-              className="w-full bg-transparent border-transparent outline-transparent"
+              className="w-full bg-transparent border-transparent outline-transparent text-sm"
               placeholder="Enter your local government"
               required
               name="local_government"
@@ -376,7 +382,7 @@ export default function HireForm() {
             <input
               id="ward"
               type="text"
-              className="w-full bg-transparent border-transparent outline-transparent"
+              className="w-full bg-transparent border-transparent outline-transparent text-sm"
               placeholder="Enter your ward"
               required
               name="ward"
@@ -395,10 +401,29 @@ export default function HireForm() {
             <input
               id="guarantor_name"
               type="text"
-              className="w-full bg-transparent border-transparent outline-transparent"
+              className="w-full bg-transparent border-transparent outline-transparent text-sm"
               placeholder="Enter your Guarantor Name"
               required
               name="guarantor_name"
+              onChange={handleInputChange}
+            />
+          </div>
+        </div>
+        <div className="flex flex-wrap -mx-3 mb-4 border border-dark rounded-xl p-3">
+          <div className="w-full px-3">
+            <label
+              className="block text-default-800 text-sm font-medium mb-1"
+              htmlFor="guarantor_phone_number"
+            >
+              Guarantor Phone Number <span className="text-red-600">*</span>
+            </label>
+            <input
+              id="guarantor_phone_number"
+              type="text"
+              className="w-full bg-transparent border-transparent outline-transparent text-sm"
+              placeholder="Enter your Guarantor Phone Number"
+              required
+              name="guarantor_phone_number"
               onChange={handleInputChange}
             />
           </div>
@@ -416,7 +441,7 @@ export default function HireForm() {
             <input
               id="language"
               type="text"
-              className="w-full bg-transparent border-transparent outline-transparent"
+              className="w-full bg-transparent border-transparent outline-transparent text-sm"
               placeholder="Enter your language"
               required
               name="language"
@@ -497,7 +522,7 @@ export default function HireForm() {
             <input
               id="next_of_kin_name"
               type="text"
-              className="w-full bg-transparent border-transparent outline-transparent"
+              className="w-full bg-transparent border-transparent outline-transparent text-sm"
               placeholder="Enter your next of kin name"
               required
               name="next_of_kin_name"
@@ -516,7 +541,7 @@ export default function HireForm() {
             <input
               id="next_of_kin_phone_number"
               type="text"
-              className="w-full bg-transparent border-transparent outline-transparent"
+              className="w-full bg-transparent border-transparent outline-transparent text-sm"
               placeholder="Enter your next of kin phone number"
               required
               name="next_of_kin_phone_number"
@@ -535,7 +560,7 @@ export default function HireForm() {
             <input
               id="next_of_kin_relationship"
               type="text"
-              className="w-full bg-transparent border-transparent outline-transparent"
+              className="w-full bg-transparent border-transparent outline-transparent text-sm"
               placeholder="Enter your next of kin relationship"
               required
               name="next_of_kin_relationship"
@@ -554,7 +579,7 @@ export default function HireForm() {
             <input
               id="next_of_kin_email"
               type="text"
-              className="w-full bg-transparent border-transparent outline-transparent"
+              className="w-full bg-transparent border-transparent outline-transparent text-sm"
               placeholder="Enter your next of kin email"
               required
               name="next_of_kin_email"
