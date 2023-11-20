@@ -127,11 +127,10 @@ export default function HireForm() {
         <h1 className="text-3xl font-bold text-gray-700 mb-3">
           Job Application Categories
         </h1>
-        <p className="text-gray-500">
-          We have 4 Categories of Job Application for you to choose from
+        <p className="text-gray-500 font-bold mb-4">
+          We have 4 Categories of Job Application for you to choose from:
         </p>
       </div>
-      <br />
       <div className="flex flex-col items-center justify-center w-full mt-4 space-y-2">
         <Link href="/auth/apply/executive-business-managerial-positions">
           <Button
