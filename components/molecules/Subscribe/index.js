@@ -11,10 +11,7 @@ export default function index() {
       <div className="container">
         <Card className={styles.subscribe_card}>
           <div className={styles.subscribe_content}>
-            <h2 className={styles.subscribe_text}>
-              We are currently
-              <span>hiring</span>
-            </h2>
+            <h2 className={styles.subscribe_text}>We are currently hiring</h2>
             <Link href="/auth/apply">
               <button className={`btn ${styles.subscribe_button}`}>
                 Apply now
