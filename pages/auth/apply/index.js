@@ -133,7 +133,7 @@ export default function HireForm() {
       </div>
       <br />
       <div className="flex flex-col items-center justify-center w-full mt-4 space-y-2">
-        <h1>
+        <h1 className="p-1 text-sm font-bold bg-green-300">
           To apply for STATE OFFICE BUSINESS POSITIONS. Click the button below.
         </h1>
         <Link href="/auth/apply/executive-business-managerial-positions">
@@ -146,7 +146,9 @@ export default function HireForm() {
             STATE OFFICE BUSINESS POSITIONS
           </Button>
         </Link>
-        <h1>To apply for STATE NGO DESK OFFICE. Click the button below.</h1>
+        <h1 className="p-1 text-sm font-bold bg-green-300">
+          To apply for STATE NGO DESK OFFICE. Click the button below.
+        </h1>
         <Link href="/auth/apply/ngo-community-portfolio-desk-offices">
           <Button
             auto
@@ -157,7 +159,7 @@ export default function HireForm() {
             STATE NGO DESK OFFICE
           </Button>
         </Link>
-        <h1>
+        <h1 className="p-1 text-sm font-bold bg-green-300">
           To apply for LOCAL GOVT BUSINESS OFFICE. Click the button below,
         </h1>
         <Link href="/auth/apply/local-govt-buisness-office">
@@ -170,7 +172,7 @@ export default function HireForm() {
             LOCAL GOVT BUSINESS OFFICE
           </Button>
         </Link>
-        <h1>
+        <h1 className="p-1 text-sm font-bold bg-green-300">
           To apply for LOCAL GOVT NGO DESK OFFICES. Click the button below.
         </h1>
         <Link href="/auth/apply/local-govt-ngo-desk-office">
