@@ -2,7 +2,7 @@
   background-color: var(--text-white);
   padding: 15px 0;
   transition: all 0.5s ease;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   text-decoration: none;
   margin: 0 auto;
 }
