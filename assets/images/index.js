@@ -10,6 +10,7 @@ import Banner from 'assets/images/banner.png';
 import User from 'assets/images/user.png';
 import Portofolio from 'assets/images/portofolio.jpg';
 import Experience from 'assets/images/experience.jpg';
+import Ammon from 'assets/images/AMMON.jpeg';
 
 export {
   Hero,
@@ -24,4 +25,5 @@ export {
   User,
   Portofolio,
   Experience,
+  Ammon,
 };
