@@ -33,7 +33,7 @@ const index = ({ token = false }) => {
 
   return (
     <nav
-      className={`navbar navbar-expand-lg fixed-top bg-white border-b border-black ${
+      className={`navbar navbar-expand-lg fixed-top bg-white ${
         navbar ? 'navbar-shrink' : ''
       } ${
         decoded.role === 1 &&
