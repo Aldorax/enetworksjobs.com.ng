@@ -14,15 +14,15 @@ export default function index() {
               <div className={styles.hero_wrapper}>
                 <h1 className={styles.hero_title}>Welcome to ENETWORKSJOBS!</h1>
                 <p className={styles.hero_subtitle}>
-                  Welcome to E-NETWORKSJOBS! E-Networksjobs serves as the
-                  recruitment, employment, and entrepreneur creation platform of
-                  E-NETWORKS TECHNOLOGIES LTD, known as E-NETWORKSVERSE.
-                  It&apos;s a place designed for experiencing ease of living on
-                  Earth. Yes, you heard it correctly. During your time on Earth,
-                  the goal is to maximize the resources and opportunities life
-                  has to offer, living on your own terms rather than the other
-                  way around. At E-Networks Technologies Ltd, we are committed
-                  to turning that aspiration into reality!
+                  E-Networksjobs serves as the recruitment, employment, and
+                  entrepreneur creation platform of E-NETWORKS TECHNOLOGIES LTD,
+                  known as E-NETWORKSVERSE. It&apos;s a place designed for
+                  experiencing ease of living on Earth. Yes, you heard it
+                  correctly. During your time on Earth, the goal is to maximize
+                  the resources and opportunities life has to offer, living on
+                  your own terms rather than the other way around. At E-Networks
+                  Technologies Ltd, we are committed to turning that aspiration
+                  into reality!
                 </p>
                 <Link href="/auth/apply">
                   <button className={`btn ${styles.hero_button}`}>
