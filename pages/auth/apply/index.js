@@ -133,56 +133,47 @@ export default function HireForm() {
       </div>
       <br />
       <div className="flex flex-col items-center justify-center w-full mt-4 space-y-2">
-        <h1 className="p-1 text-sm font-bold bg-green-300">
-          To apply for STATE OFFICE BUSINESS POSITIONS. Click the button below.
-        </h1>
         <Link href="/auth/apply/executive-business-managerial-positions">
           <Button
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px]"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-green-500"
           >
-            STATE OFFICE BUSINESS POSITIONS
+            Click to apply for STATE OFFICE BUSINESS POSITIONS below.
           </Button>
         </Link>
-        <h1 className="p-1 text-sm font-bold bg-green-300">
-          To apply for STATE NGO DESK OFFICE. Click the button below.
-        </h1>
+        <br />
         <Link href="/auth/apply/ngo-community-portfolio-desk-offices">
           <Button
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px]"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-yellow-500"
           >
-            STATE NGO DESK OFFICE
+            Click To apply for STATE NGO DESK OFFICES
           </Button>
         </Link>
-        <h1 className="p-1 text-sm font-bold bg-green-300">
-          To apply for LOCAL GOVT BUSINESS OFFICE. Click the button below,
-        </h1>
+        <br />
         <Link href="/auth/apply/local-govt-buisness-office">
           <Button
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px]"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-blue-500"
           >
-            LOCAL GOVT BUSINESS OFFICE
+            Clcick to apply for LOCAL GOVT BUSINESS OFFICES
           </Button>
         </Link>
-        <h1 className="p-1 text-sm font-bold bg-green-300">
-          To apply for LOCAL GOVT NGO DESK OFFICES. Click the button below.
-        </h1>
+        <br />
         <Link href="/auth/apply/local-govt-ngo-desk-office">
           <Button
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px]"
+            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-red-500"
           >
-            LOCAL GOVT NGO DESK OFFICES
+            Click to apply for LOCAL GOVT NGO DESK OFFICES
           </Button>
         </Link>
       </div>
