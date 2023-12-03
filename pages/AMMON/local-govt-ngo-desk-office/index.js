@@ -632,7 +632,11 @@ export default function HireForm() {
             </select>
           </div>
         </div>
-        <Button className="text-white px-4 py-2 rounded-xl" onPress={onOpen}>
+        <Button
+          className="text-white px-4 py-2 rounded-xl"
+          onPress={onOpen}
+          color="success"
+        >
           Open Modal
         </Button>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
