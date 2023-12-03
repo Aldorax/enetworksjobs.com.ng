@@ -1,19 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import {
-  Modal,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
-  Button,
-  useDisclosure,
-  Image,
-} from '@nextui-org/react';
+import { Button, Image } from '@nextui-org/react';
 
 export default function HireForm() {
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [formData, setFormData] = useState({
     email: '',
     phone_number: '',
@@ -633,49 +623,23 @@ export default function HireForm() {
           </div>
         </div>
 
-        <Button
-          className="text-white px-4 py-2 rounded-xl"
-          onPress={onOpen}
-          color="success"
-        >
-          Apply
-        </Button>
-        <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
-          <ModalContent>
-            {(onClose) => (
-              <>
-                <ModalHeader className="flex flex-col gap-1">
-                  Notification
-                </ModalHeader>
-                <ModalBody>
-                  <p>
-                    By submitting your application, you agree that 10% of your
-                    salary will be allocated to AMMON, [Partner of Enetworks].
-                    Your agreement to this is a prerequisite for proceeding with
-                    your application.
-                  </p>
-                </ModalBody>
-                <ModalFooter>
-                  <Button
-                    color="danger"
-                    variant="light"
-                    className="text-white p-2 rounded-xl"
-                    onPress={onClose}
-                  >
-                    Reject
-                  </Button>
-                  <Button
-                    color="primary"
-                    className="text-white p-2 rounded-xl"
-                    onPress={handleRegister}
-                  >
-                    I Agree
-                  </Button>
-                </ModalFooter>
-              </>
-            )}
-          </ModalContent>
-        </Modal>
+        <div className="flex items-start md:items-center gap-3 mb-2">
+          <input type="checkbox" className="scale-150" />
+          <div className="text-sm md:text-medium font-semibold">
+            By submitting your application, you agree that 10% of your salary
+            will be allocated to AMMON. Your agreement to this is a prerequisite
+            for proceeding with your application.
+          </div>
+        </div>
+        <div>
+          <Button
+            color="primary"
+            className="text-white p-2 rounded-xl px-5"
+            onPress={handleRegister}
+          >
+            I Agree
+          </Button>
+        </div>
       </div>
     </div>
   );

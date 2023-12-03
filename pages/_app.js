@@ -9,7 +9,6 @@ import { PersistGate } from 'redux-persist/integration/react';
 import NextNProgress from 'nextjs-progressbar';
 import { wrapper, store, persistor } from 'store/store';
 import mainLayout from 'layouts/mainLayout';
-import { Providers } from './provider';
 
 const layouts = {
   mainLayout,
@@ -36,16 +35,14 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <ToastContainer />
-      <Providers>
-        <Layout>
-          <Provider store={store}>
-            <PersistGate loading={null} persistor={persistor}>
-              <NextNProgress color="#5e50a1" />
-              <Component {...pageProps} />
-            </PersistGate>
-          </Provider>
-        </Layout>
-      </Providers>
+      <Layout>
+        <Provider store={store}>
+          <PersistGate loading={null} persistor={persistor}>
+            <NextNProgress color="#5e50a1" />
+            <Component {...pageProps} />
+          </PersistGate>
+        </Provider>
+      </Layout>
     </>
   );
 }
