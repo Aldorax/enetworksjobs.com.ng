@@ -638,7 +638,7 @@ export default function HireForm() {
           onPress={onOpen}
           color="success"
         >
-          Open Modal
+          Apply
         </Button>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
           <ModalContent>
@@ -656,10 +656,19 @@ export default function HireForm() {
                   </p>
                 </ModalBody>
                 <ModalFooter>
-                  <Button color="danger" variant="light" onPress={onClose}>
+                  <Button
+                    color="danger"
+                    variant="light"
+                    className="text-white p-2 rounded-xl"
+                    onPress={onClose}
+                  >
                     Reject
                   </Button>
-                  <Button color="primary" onPress={handleRegister}>
+                  <Button
+                    color="primary"
+                    className="text-white p-2 rounded-xl"
+                    onPress={handleRegister}
+                  >
                     I Agree
                   </Button>
                 </ModalFooter>
