@@ -1,9 +1,19 @@
 'use client';
 
-import { Button, Image } from '@nextui-org/react';
 import { useState } from 'react';
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure,
+  Image,
+} from '@nextui-org/react';
 
 export default function HireForm() {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [formData, setFormData] = useState({
     email: '',
     phone_number: '',
@@ -622,15 +632,36 @@ export default function HireForm() {
             </select>
           </div>
         </div>
-
-        <Button
-          color="success"
-          type="submit"
-          className="text-white px-4 py-2 rounded-xl"
-          onClick={handleRegister}
-        >
-          Submit
+        <Button className="text-white px-4 py-2 rounded-xl" onPress={onOpen}>
+          Open Modal
         </Button>
+        <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+          <ModalContent>
+            {(onClose) => (
+              <>
+                <ModalHeader className="flex flex-col gap-1">
+                  Notification
+                </ModalHeader>
+                <ModalBody>
+                  <p>
+                    By submitting your application, you agree that 10% of your
+                    salary will be allocated to AMMON, [Partner of Enetworks].
+                    Your agreement to this is a prerequisite for proceeding with
+                    your application.
+                  </p>
+                </ModalBody>
+                <ModalFooter>
+                  <Button color="danger" variant="light" onPress={onClose}>
+                    Reject
+                  </Button>
+                  <Button color="primary" onPress={handleRegister}>
+                    I Agree
+                  </Button>
+                </ModalFooter>
+              </>
+            )}
+          </ModalContent>
+        </Modal>
       </div>
     </div>
   );
