@@ -20,6 +20,13 @@ export default function middleware(req) {
       pathname !== '/auth/apply/ngo-community-portfolio-desk-offices' &&
       pathname !== '/auth/apply/local-govt-buisness-office' &&
       pathname !== '/auth/apply/local-govt-ngo-desk-office' &&
+      pathname !== '/auth/apply/apply-for-another' &&
+      pathname !==
+        '/auth/apply/apply-for-another/executive-business-managerial-positions' &&
+      pathname !==
+        '/auth/apply/apply-for-another/ngo-community-portfolio-desk-offices' &&
+      pathname !== '/auth/apply/apply-for-another/local-govt-buisness-office' &&
+      pathname !== '/auth/apply/apply-for-another/local-govt-ngo-desk-office' &&
       pathname !== '/auth/apply/success' &&
       pathname !== '/AMMON' &&
       pathname !== '/AMMON/apply-for-another' &&

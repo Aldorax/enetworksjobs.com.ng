@@ -95,7 +95,7 @@ export default function HireForm() {
                 AND ACCESS TO APPROVED ALLOWANCES{' '}
               </li>
               <li>
-                3. SALARIES WILL BE PRO-RATED DURING PROBATIONARY PERIOD BASED
+                3. SALARIES WILL BE PRO-RATED DUborder PROBATIONARY PERIOD BASED
                 ON THE PRODUCTIVITY LEVEL OF EACH EMPLOYEE{' '}
               </li>
               <li>
@@ -104,7 +104,7 @@ export default function HireForm() {
               </li>
               <li>
                 5. SCHEDULED, DEFINED AND MEASURABLE TASKS WILL BE ASSIGNED TO
-                EMPLOYEES DURING PROBATION FOR ACCESSMENT{' '}
+                EMPLOYEES DUborder PROBATION FOR ACCESSMENT{' '}
               </li>
               <li>
                 6. EMPLOYEES ARE EXPECTED TO BE DEDICATED, LOYAL AND DISCIPLINED{' '}
@@ -137,7 +137,7 @@ export default function HireForm() {
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-green-500 font-semibold text-white"
+            className="border hover:text-white hover:bg-black hover:border-white border-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-green-500 font-semibold text-white"
           >
             Click to apply for STATE OFFICE BUSINESS POSITIONS.
           </Button>
@@ -148,7 +148,7 @@ export default function HireForm() {
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-yellow-500 font-semibold text-white"
+            className="border hover:text-white hover:bg-black hover:border-white border-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-yellow-500 font-semibold text-white"
           >
             Click To apply for STATE NGO DESK OFFICE POSITIONS
           </Button>
@@ -159,7 +159,7 @@ export default function HireForm() {
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-blue-500 font-semibold text-white"
+            className="border hover:text-white hover:bg-black hover:border-white border-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-blue-500 font-semibold text-white"
           >
             Clcick to apply for LOCAL GOVT BUSINESS OFFICE POSITIONS
           </Button>
@@ -170,9 +170,22 @@ export default function HireForm() {
             auto
             shadow
             size="small"
-            className="ring hover:text-white hover:bg-black hover:ring-white ring-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-red-500 font-semibold text-white"
+            className="border hover:text-white hover:bg-black hover:border-white border-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] bg-red-500 font-semibold text-white"
           >
             Click to apply for LOCAL GOVT NGO DESK OFFICE POSITIONS
+          </Button>
+        </Link>
+
+        <br />
+        <Link href="/auth/apply/apply-for-another">
+          <Button
+            auto
+            shadow
+            size="small"
+            className="border hover:bg-black hover:border-white border-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] font-semibold hover:text-white"
+          >
+            Already applied for a position already and want to apply for
+            another?
           </Button>
         </Link>
       </div>
