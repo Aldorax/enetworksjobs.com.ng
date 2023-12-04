@@ -210,7 +210,7 @@ export default function HireForm() {
             className="border hover:bg-black hover:border-white border-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] font-semibold hover:text-white"
           >
             Already applied for a position already and want to apply for
-            another? span
+            another?
           </Button>
         </Link>
       </div>
