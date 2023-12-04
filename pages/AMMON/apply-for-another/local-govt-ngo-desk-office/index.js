@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Button, Image } from '@nextui-org/react';
+import { Image } from '@nextui-org/react';
 
 export default function HireForm() {
   const [formData, setFormData] = useState({
@@ -745,13 +745,12 @@ export default function HireForm() {
           </div>
         </div>
         <div>
-          <Button
-            color="primary"
-            className="text-white p-2 rounded-xl px-5"
-            onPress={handleRegister}
+          <button
+            className="text-white p-2 rounded-xl px-5 bg-blue-500"
+            onClick={handleRegister}
           >
             I Agree
-          </Button>
+          </button>
         </div>
       </div>
     </div>
