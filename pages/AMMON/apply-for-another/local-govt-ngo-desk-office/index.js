@@ -59,6 +59,7 @@ export default function HireForm() {
       );
       formDataToSubmit.append('language', formData.language);
       formDataToSubmit.append('position', formData.position);
+      formDataToSubmit.append('previous_position', formData.previous_position);
       formDataToSubmit.append('gender', formData.gender);
       formDataToSubmit.append('next_of_kin_name', formData.next_of_kin_name);
       formDataToSubmit.append(
@@ -163,21 +164,6 @@ export default function HireForm() {
     'Zamfara',
   ];
 
-  const AVAILABLE_POSITIONS = [
-    'State Desk Officer( NGO DESK OFFICE)',
-    'Dep Desk Officer',
-    'Gen Secretary',
-    'Asst Gen Secretary',
-    'Financial Secretary',
-    'Treasurer',
-    'Information Officer ( Public and Traditional)',
-    'Asst Information Officer( Social Media)',
-    'Legal Adviser',
-    'Women Affairs Officer',
-    'Youth Affairs Officer',
-    'Organising Officer',
-  ];
-
   const PREVIOUS_POSITIONS = [
     'State Managers',
     'State Asst Manager',
@@ -227,6 +213,21 @@ export default function HireForm() {
     'LG Product Dev Officer',
     'LG Business Development Officer',
     'LG Personnel Manager',
+  ];
+
+  const AVAILABLE_POSITIONS = [
+    'LG Desk Officer',
+    'Dep LG Desk Officer',
+    'LG Gen Secretary',
+    'LG Asst Gen Secretary',
+    'LG Financial Secretary',
+    'LG Treasurer',
+    'LG Information Officer ( Public and Traditional)',
+    'LG Asst Information Officer( Social Media)',
+    'LG Legal Adviser',
+    'LG Women Affairs Officer',
+    'LG Youth Affairs Officer',
+    'LG Organising Officer',
   ];
 
   const GENDER = ['Male', 'Female'];

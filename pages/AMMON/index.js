@@ -200,6 +200,19 @@ export default function HireForm() {
             Click to apply for LOCAL GOVT NGO DESK OFFICE POSITIONS
           </Button>
         </Link>
+
+        <br />
+        <Link href="/AMMON/apply-for-another">
+          <Button
+            auto
+            shadow
+            size="small"
+            className="border hover:bg-black hover:border-white border-black px-4 py-2 rounded-none min-w-[330px] md:min-w-[450px] md:max-w-[450px] font-semibold hover:text-white"
+          >
+            Already applied for a position already and want to apply for
+            another? span
+          </Button>
+        </Link>
       </div>
     </div>
   );
