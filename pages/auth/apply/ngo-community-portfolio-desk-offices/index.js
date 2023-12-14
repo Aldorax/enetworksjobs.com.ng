@@ -82,7 +82,7 @@ export default function HireForm() {
       }
 
       const response = await fetch(
-        `https://enetworks-tovimikailu.koyeb.app/register_for_hire/ammon`,
+        `https://enetworks-tovimikailu.koyeb.app/register_for_hire`,
         {
           method: 'POST',
           body: formDataToSubmit,
