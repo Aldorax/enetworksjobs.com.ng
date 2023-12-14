@@ -741,7 +741,7 @@ export default function HireForm() {
             className="text-white p-2 rounded-xl px-5 bg-blue-500"
             onClick={handleRegister}
           >
-            I Agree
+            Apply
           </button>
         </div>
       </div>

@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Image } from '@nextui-org/react';
+import { Image } from '@nextui-org/react';
 import { useState } from 'react';
 
 export default function HireForm() {
@@ -624,14 +624,12 @@ export default function HireForm() {
           </div>
         </div>
 
-        <Button
-          color="success"
-          type="submit"
-          className="text-white px-4 py-2 rounded-xl"
+        <button
+          className="text-white p-2 rounded-xl px-5 bg-blue-500"
           onClick={handleRegister}
         >
-          Submit
-        </Button>
+          Apply
+        </button>
       </div>
     </div>
   );

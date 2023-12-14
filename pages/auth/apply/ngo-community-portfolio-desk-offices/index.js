@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Button, Image } from '@nextui-org/react';
+import { Image } from '@nextui-org/react';
 
 export default function HireForm() {
   const [formData, setFormData] = useState({
@@ -735,22 +735,13 @@ export default function HireForm() {
           </div>
         </div>
 
-        <div className="flex items-start md:items-center gap-3 mb-2">
-          <input type="checkbox" className="scale-150" />
-          <div className="text-sm md:text-medium font-semibold">
-            By submitting your application, you agree that 10% of your salary
-            will be allocated to AMMON. Your agreement to this is a prerequisite
-            for proceeding with your application.
-          </div>
-        </div>
         <div>
-          <Button
-            color="primary"
-            className="text-white p-2 rounded-xl px-5"
-            onPress={handleRegister}
+          <button
+            className="text-white p-2 rounded-xl px-5 bg-blue-500"
+            onClick={handleRegister}
           >
-            I Agree
-          </Button>
+            Apply
+          </button>
         </div>
       </div>
     </div>
