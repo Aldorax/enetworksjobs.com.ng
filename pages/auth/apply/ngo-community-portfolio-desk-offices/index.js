@@ -319,7 +319,7 @@ export default function HireForm() {
             />
           </div>
         </div>
-        <div className="flex flex-wrap -mx-3 mb-4 border border-dark rounded-xl p-3">
+        <div className="flex flex-col flex-wrap -mx-3 mb-4 border border-dark rounded-xl p-3">
           <div className="w-full px-3">
             <label
               className="block text-default-800 text-sm font-medium mb-1"
@@ -338,25 +338,43 @@ export default function HireForm() {
               onChange={handleInputChange}
             />
           </div>
+          <h1 className="mt-4 px-3 text-xs">
+            Don&apos;t have an enetworkspat account?{' '}
+            <a
+              className="text-blue-500 font-bold underline"
+              href="https://enetworkspay.com"
+            >
+              Click here to create one
+            </a>
+          </h1>
         </div>
-        <div className="flex flex-wrap -mx-3 mb-4 border border-dark rounded-xl p-3">
+        <div className="flex flex-col flex-wrap -mx-3 mb-4 border border-dark rounded-xl p-3">
           <div className="w-full px-3">
             <label
               className="block text-default-800 text-sm font-medium mb-1"
               htmlFor="agent_account_id"
             >
-              Enetworkspay Card Number<span className="text-red-600">*</span>
+              Enetworkspay Card Number <span className="text-red-600">*</span>
             </label>
             <input
               id="agent_account_id"
               type="text"
               className="w-full bg-transparent border-transparent outline-transparent text-sm"
-              placeholder="Enter your Enetworkspay Card Number"
+              placeholder="Enter your Enetworkspay Card Number :"
               required
               name="agent_account_id"
               onChange={handleInputChange}
             />
           </div>
+          <h1 className="mt-4 px-3 text-xs">
+            Don&apos;t have an enetworkspay card number?{' '}
+            <a
+              className="text-blue-500 font-bold underline"
+              href="https://enetworkspay.com"
+            >
+              Click here to create one
+            </a>
+          </h1>
         </div>
         {/* Other inputs for step 1 */}
         <div className="flex flex-wrap -mx-3 mb-4 border border-dark rounded-xl p-3">
